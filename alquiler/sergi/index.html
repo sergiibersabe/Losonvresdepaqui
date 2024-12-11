@@ -8,24 +8,39 @@
 </head>
 <body>
     <header>
-        <h1>Catálogo de Coches</h1>
+        <h1>Alquiler de coches</h1>
+        <nav>
+            <ul>
+                <li><a href="coches.html">Coches</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="car-grid">
-        <div class="car">
-            <img src="assets/coche01.png" alt="Coche 01">
-            <h2>Porsche GT3 RS</h2>
-            <p>Precio por día: 50€</p>
-        </div>
-        <div class="car">
-            <img src="assets/coche02.png" alt="Coche 02">
-            <h2>Volkswagen Golf 8R</h2>
-            <p>Precio por día: 60€</p>
-        </div>
-        <div class="car">
-            <img src="assets/coche03.png" alt="Coche 03">
-            <h2>Honda Civic Type R</h2>
-            <p>Precio por día: 70€</p>
-        </div>
-    </main>
+    <div class="search-container">
+        <form class="search-form">
+            <div class="form-group">
+                <label for="pickup-location">RECOGIDA :</label>
+                <input type="text" id="pickup-location" placeholder="Ciudad, Aeropuerto, Ubicación">
+                <div class="input-group">
+                    <input type="date" id="pickup-date">
+                    <input type="time" id="pickup-time" value="14:00">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="return-location">DEVOLUCIÓN :</label>
+                <input type="text" id="return-location" placeholder="Ciudad, Aeropuerto, Ubicación">
+                <div class="input-group">
+                    <input type="date" id="return-date">
+                    <input type="time" id="return-time" value="14:00">
+                </div>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" id="age-check">
+                <label for="age-check">Conductor entre 30 y 65 años? <span class="info">&#9432;</span></label>
+            </div>
+            <button type="submit" class="btn-submit">Buscar</button>
+        </form>
+    </div>
 </body>
 </html>
