@@ -69,7 +69,7 @@
 </head>
 <body>
     <div class="form-container">
-        <h1>Formulario Interactivo</h1>
+        <h1>Formulario Registro Nuevo Coche</h1>
         <form>
             <div class="form-group">
                 <label for="name">Modelo Coche:</label>
@@ -82,14 +82,35 @@
             </div>
 
             <div class="form-group">
-                <label for="age">Edad:</label>
-                <input type="number" id="age" name="age" min="1" max="120" placeholder="Escribe tu edad">
+                <label for="age">Fecha Matriculación:</label>
+                <input type="date" id="age" name="age" min="1" max="120" placeholder="Escribe la primera fecha">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Potencia del vehiculo</label>
+                <input type="number" id="age" name="age" min="1" max="120" placeholder="Introduce la potencia del vehiculo (CV)">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Color del vehiculo</label>
+                <input type="text" id="age" name="age" min="1" max="120" placeholder="Introduce el color del vehiculo">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Tipo de combustión:</label>
+                <select id="gender" name="gender">
+                    <option value="">Selecciona la combustión</option>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="disel">Diésel</option>
+                    <option value="electric">Eléctrico</option>
+                    <option value="hibrid">Híbrido</option>
+                </select>
             </div>
 
             <div class="form-group">
                 <label for="gender">Tipo coche:</label>
                 <select id="gender" name="gender">
-                    <option value="">Selecciona una opción</option>
+                    <option value="">Selecciona el tipo de coche</option>
                     <option value="male">SUV</option>
                     <option value="female">Crossover</option>
                     <option value="deportivo">Deportivo</option>
@@ -107,7 +128,7 @@
             </div>
 
             <div class="form-group">
-                <button type="submit">Enviar</button>
+                <button type="submit">Registrar</button>
             </div>
         </form>
     </div>
