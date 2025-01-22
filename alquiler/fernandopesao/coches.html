@@ -54,7 +54,7 @@
                             <strong>Combustible:</strong> Gasolina<br>
                             <strong>Transmisión:</strong> Automático
                         </p>
-                        <a href="#" class="btn btn-danger">Más información</a>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#infoModal1">Más información</button>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                             <strong>Combustible:</strong> Diésel<br>
                             <strong>Transmisión:</strong> Manual
                         </p>
-                        <a href="#" class="btn btn-danger">Más información</a>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#infoModal2">Más información</button>
                     </div>
                 </div>
             </div>
@@ -86,58 +86,69 @@
                             <strong>Combustible:</strong> Híbrido<br>
                             <strong>Transmisión:</strong> Automático
                         </p>
-                        <a href="#" class="btn btn-danger">Más información</a>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#infoModal3">Más información</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="row">
-            <!-- Coche 4 -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="coche4.jpg" class="card-img-top" alt="Coche 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Coche 4</h5>
-                        <p class="card-text">
-                            <strong>Plazas:</strong> 2<br>
-                            <strong>Combustible:</strong> Eléctrico<br>
-                            <strong>Transmisión:</strong> Automático
-                        </p>
-                        <a href="#" class="btn btn-danger">Más información</a>
-                    </div>
+    <!-- Modal Template -->
+    <div class="modal fade" id="infoModal1" tabindex="-1" aria-labelledby="infoModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel1">Coche 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Plazas:</strong> 5</p>
+                    <p><strong>Combustible:</strong> Gasolina</p>
+                    <p><strong>Transmisión:</strong> Automático</p>
+                    <p>Este coche es perfecto para familias y viajes largos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Coche 5 -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="coche5.jpg" class="card-img-top" alt="Coche 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Coche 5</h5>
-                        <p class="card-text">
-                            <strong>Plazas:</strong> 5<br>
-                            <strong>Combustible:</strong> Gasolina<br>
-                            <strong>Transmisión:</strong> Manual
-                        </p>
-                        <a href="#" class="btn btn-danger">Más información</a>
-                    </div>
+    <div class="modal fade" id="infoModal2" tabindex="-1" aria-labelledby="infoModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel2">Coche 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Plazas:</strong> 4</p>
+                    <p><strong>Combustible:</strong> Diésel</p>
+                    <p><strong>Transmisión:</strong> Manual</p>
+                    <p>Un coche compacto y eficiente para la ciudad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Coche 6 -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="coche6.jpg" class="card-img-top" alt="Coche 6">
-                    <div class="card-body">
-                        <h5 class="card-title">Coche 6</h5>
-                        <p class="card-text">
-                            <strong>Plazas:</strong> 4<br>
-                            <strong>Combustible:</strong> Diésel<br>
-                            <strong>Transmisión:</strong> Automático
-                        </p>
-                        <a href="#" class="btn btn-danger">Más información</a>
-                    </div>
+    <div class="modal fade" id="infoModal3" tabindex="-1" aria-labelledby="infoModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel3">Coche 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Plazas:</strong> 7</p>
+                    <p><strong>Combustible:</strong> Híbrido</p>
+                    <p><strong>Transmisión:</strong> Automático</p>
+                    <p>Ideal para grupos grandes y viajes sostenibles.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
