@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Coches</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script>
+        function redirect(car) {
+            if (car === 'porsche') {
+                window.location.href = 'carac-porsche.html';
+            } else if (car === 'golf') {
+                window.location.href = 'carac-golf.html';
+            } else if (car === 'civic') {
+                window.location.href = 'carac-civic.html';
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -15,26 +26,27 @@
             <img src="assets/coche01.png" alt="Coche 01">
             <h2>Porsche GT3 RS</h2>
             <p>Precio por día: 50€</p>
-            <button name="redirect" class="button" onClick="redirect()">
+            <button name="redirect" class="button" onClick="redirect('porsche')">
                 Seleccionar
-                </button>
+            </button>
         </div>
         <div class="car">
             <img src="assets/coche02.png" alt="Coche 02">
             <h2>Volkswagen Golf 8R</h2>
             <p>Precio por día: 60€</p>
-            <button name="redirect" class="button" onClick="redirect()">
+            <button name="redirect" class="button" onClick="redirect('golf')">
                 Seleccionar
-                </button>
+            </button>
         </div>
         <div class="car">
             <img src="assets/coche03.png" alt="Coche 03">
             <h2>Honda Civic Type R</h2>
             <p>Precio por día: 70€</p>
-            <button name="redirect" class="button" onClick="redirect()">
+            <button name="redirect" class="button" onClick="redirect('civic')">
                 Seleccionar
-                </button>
+            </button>
         </div>
     </main>
 </body>
 </html>
+
