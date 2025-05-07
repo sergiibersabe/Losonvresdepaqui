@@ -25,13 +25,14 @@
             <table class="table table-bordered table-hover align-middle text-center">
                 <thead class="table-danger">
                     <tr>
-                        <th>Imagen</th>
-                        <th>Nombre</th>
-                        <th>Plazas</th>
+                        <th>Matricula</th>
+                        <th>Modelo</th>
                         <th>Combustible</th>
-                        <th>Transmisión</th>
-                        <th>Precio por día</th>
-                        <th>Acciones</th>
+                        <th>Motor</th>
+                        <th>Plazas</th>
+                        <th>Maletas</th>
+                        <th>Foto</th>
+                        <th>Gama</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,16 +40,18 @@
                     <?php
                         
                         include 'conexion.php';
-                        $sql = "SELECT * FROM coches";
+                        $sql = "SELECT * FROM coche";
                         $resultado = mysqli_query($conexion, $sql);
 
                         while($fila = mysqli_fetch_assoc($resultado)) {
                             echo "<tr>";
-                            echo "<td>{$fila['nombre']}</td>";
-                            echo "<td>{$fila['plazas']}</td>";
+                            echo "<td>{$fila['matricula']}</td>";
+                            echo "<td>{$fila['modelo']}</td>";
                             echo "<td>{$fila['combustible']}</td>";
-                            echo "<td>{$fila['transmision']}</td>";
-                            echo "<td>{$fila['precio']} €</td>";
+                            echo "<td>{$fila['motor']}</td>";
+                            echo "<td>{$fila['maletas']} €</td>";
+                            echo "<td>{$fila['foto']} €</td>";
+                            echo "<td>{$fila['codgama']} €</td>";
                             echo "<td><a class='btn btn-danger btn-sm'>Ver más</a></td>";
                             echo "</tr>";
                         }
